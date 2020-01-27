@@ -1,0 +1,70 @@
+state : {
+	"map":{
+
+	},
+	"drawcontroller":{
+
+	},
+	"data_layers":[
+		{	"id": 001,
+			"question_id": "q_id",
+			"type": "FeatureCollection",
+			"features": [
+				{
+					"id": 001,
+					"type": "Feature",
+					"geometry": {
+						"type": "Point",
+						"coordiantes": [102.0, 0.5]
+					},
+					"properties":{
+						"props0": "value0",
+					}
+				},
+				{
+					"type": "Feature",		
+				}
+			]
+		},
+		{
+			"type": "FeatureCollection",
+			"features":[
+				{
+					"type": "Feature",
+					"properties": {
+						"value": 0,
+					}
+				}
+			]
+		}
+	],
+	"survey_structure":{
+		"id":"survey_id",
+		"auth_required": true,
+		"password_required": false,
+		"sections":[
+			{	
+				"id":"section_id",
+				"next_section":"next_section_id",
+				"prev_section":"prev_section_id",
+				"show_condition": {
+					"question": "question_id",
+					"condition": "==",
+					"value": "123",
+				},
+				"qustions":[
+					{
+						"id":"question_id",
+						"type":"PointButton",
+						"title":"title",
+						"icon": "icon",
+						"color": "color",
+						"description": "description",
+						"questions":[],
+						"required": true,
+					}
+				]
+			}
+		]
+	}
+}
